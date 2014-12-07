@@ -1,0 +1,345 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MultiCCDBasedOnLinux.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MultiCCDBasedOnLinux.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MultiCCDBasedOnLinux"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MultiCCDBasedOnLinux 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CCDCTRL DIALOGEX 0, 0, 710, 321
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CCD Control"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IPADDRESS_CCD,"SysIPAddress32",WS_TABSTOP,47,138,99,15
+    EDITTEXT        IDC_EDIT_PortOfCCD,176,138,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "CCD Operation",IDC_STATIC,21,114,296,194
+    PUSHBUTTON      "连接",IDC_BUTTON_ConnCCD,225,138,41,14
+    PUSHBUTTON      "断开",IDC_BUTTON_DisConnCCD,274,138,37,14
+    EDITTEXT        IDC_EDIT_ImgPath,67,159,149,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置图像保存路径",IDC_BUTTON_SavPath,225,158,86,14
+    PUSHBUTTON      "单帧",IDC_BUTTON_EXP,32,222,34,14
+    EDITTEXT        IDC_EDIT_EXPTime,72,179,57,14,ES_AUTOHSCROLL
+    LTEXT           "IP：",IDC_STATIC,30,141,16,8
+    LTEXT           "Port：",IDC_STATIC,150,141,22,8
+    LTEXT           "路径：",IDC_STATIC,30,161,25,8
+    LTEXT           "曝光时间：",IDC_STATIC,30,181,41,8
+    LTEXT           "文件名：",IDC_STATIC,30,200,33,8
+    EDITTEXT        IDC_EDIT_ImgName,68,198,98,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "终止曝光",IDC_BUTTON_StopEXP,79,222,50,14
+    LTEXT           "RA:",IDC_STATIC,507,26,13,8
+    EDITTEXT        IDC_EDIT_RA,525,23,51,14,ES_AUTOHSCROLL
+    LTEXT           "DEC:",IDC_STATIC,503,43,17,8
+    EDITTEXT        IDC_EDIT_DEC,525,40,51,14,ES_AUTOHSCROLL
+    GROUPBOX        "Fits Header Units",IDC_STATIC,322,15,374,291
+    LTEXT           "IMAGEID:",IDC_STATIC,347,145,32,8
+    EDITTEXT        IDC_EDIT_IMAGEID,383,142,99,14,ES_AUTOHSCROLL
+    LTEXT           "BSCALE:",IDC_STATIC,351,111,28,8
+    EDITTEXT        IDC_EDIT_BSCALE,383,108,51,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "BZERO:",IDC_STATIC,353,128,26,8
+    EDITTEXT        IDC_EDIT_BZERO,383,125,51,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "CCDTYPE:",IDC_STATIC,345,162,34,8
+    EDITTEXT        IDC_EDIT_CCDTYPE,383,159,51,14,ES_AUTOHSCROLL
+    LTEXT           "WACID:",IDC_STATIC,493,77,27,8
+    EDITTEXT        IDC_EDIT_WACID,525,74,51,14,ES_AUTOHSCROLL
+    LTEXT           "MOUNTID:",IDC_STATIC,485,94,35,8
+    EDITTEXT        IDC_EDIT_MOUNTID,525,91,51,14,ES_AUTOHSCROLL
+    LTEXT           "CAMID:",IDC_STATIC,494,111,26,8
+    EDITTEXT        IDC_EDIT_CAMID,525,108,51,14,ES_AUTOHSCROLL
+    LTEXT           "CCDID:",IDC_STATIC,495,128,25,8
+    EDITTEXT        IDC_EDIT_CCDID,525,125,51,14,ES_AUTOHSCROLL
+    LTEXT           "CCDSIZE:",IDC_STATIC,488,145,32,8
+    EDITTEXT        IDC_EDIT_CCDSIZE,525,142,51,14,ES_AUTOHSCROLL
+    LTEXT           "GAIN:",IDC_STATIC,500,162,20,8
+    EDITTEXT        IDC_EDIT_GAIN,525,159,51,14,ES_AUTOHSCROLL
+    LTEXT           "READRATE:",IDC_STATIC,481,179,39,8
+    EDITTEXT        IDC_EDIT_READRATE,525,176,51,14,ES_AUTOHSCROLL
+    LTEXT           "READOUTNOISE:",IDC_STATIC,464,196,56,8
+    EDITTEXT        IDC_EDIT_READOUTNOISE,525,193,51,14,ES_AUTOHSCROLL
+    LTEXT           "TEMPERATURESET:",IDC_STATIC,456,213,64,8
+    EDITTEXT        IDC_EDIT_TEMPERATURESET,525,210,51,14,ES_AUTOHSCROLL
+    LTEXT           "TEMPERATUREACT:",IDC_STATIC,455,230,65,8
+    EDITTEXT        IDC_EDIT_TEMPERATUREACT,525,227,51,14,ES_AUTOHSCROLL
+    LTEXT           "MOONPHASE:",IDC_STATIC,474,247,46,8
+    EDITTEXT        IDC_EDIT_MOONPHASE,524,244,51,14,ES_AUTOHSCROLL
+    LTEXT           "MOONANGLE:",IDC_STATIC,474,264,46,8
+    EDITTEXT        IDC_EDIT_MOONANGLE,524,261,51,14,ES_AUTOHSCROLL
+    LTEXT           "WEATHER:",IDC_STATIC,484,281,36,8
+    EDITTEXT        IDC_EDIT_WEATHER,524,278,51,14,ES_AUTOHSCROLL
+    LTEXT           "PIXELSCALE:",IDC_STATIC,585,26,42,8
+    EDITTEXT        IDC_EDIT_PIXELSCALE,632,23,51,14,ES_AUTOHSCROLL
+    LTEXT           "LOCST:",IDC_STATIC,602,43,25,8
+    EDITTEXT        IDC_EDIT_LOCST,632,40,51,14,ES_AUTOHSCROLL
+    LTEXT           "AZIMUTH:",IDC_STATIC,593,60,34,8
+    EDITTEXT        IDC_EDIT_AZIMUTH,632,57,51,14,ES_AUTOHSCROLL
+    LTEXT           "ELEVATION:",IDC_STATIC,587,77,40,8
+    EDITTEXT        IDC_EDIT_ELEVATION,632,74,51,14,ES_AUTOHSCROLL
+    LTEXT           "AIRMASS:",IDC_STATIC,593,94,34,8
+    EDITTEXT        IDC_EDIT_AIRMASS,632,91,51,14,ES_AUTOHSCROLL
+    LTEXT           "FITSIZE:",IDC_STATIC,598,111,29,8
+    EDITTEXT        IDC_EDIT_FITSIZE,632,108,51,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Fan Fast",IDC_BUTTON_FanFast,30,244,50,14
+    PUSHBUTTON      "Fan Medium",IDC_BUTTON_FanMed,107,244,50,14
+    PUSHBUTTON      "Fan Slow",IDC_BUTTON_FanSlow,184,244,50,14
+    PUSHBUTTON      "Fan Off",IDC_BUTTON_FanOff,261,244,50,14
+    LTEXT           "设置制冷器温度：",IDC_STATIC,30,267,65,8
+    EDITTEXT        IDC_EDIT_SetCoolerTem,93,264,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置",IDC_BUTTON_SetCoolerTem,147,264,50,14
+    PUSHBUTTON      "制冷器开",IDC_BUTTON_StartCooler,204,264,50,14
+    PUSHBUTTON      "制冷器关",IDC_BUTTON_StopCooler,261,264,50,14
+    LTEXT           "制冷器目标温度：",IDC_STATIC,30,287,65,8
+    EDITTEXT        IDC_EDIT_GetCoolerTem,93,285,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "获取",IDC_BUTTON_GetCoolerTem,147,285,50,14
+    GROUPBOX        "Feed Back",IDC_STATIC,21,14,296,99
+    EDITTEXT        IDC_EDIT_FeedBack,25,22,287,87,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "获取U9000当前状态",IDC_BUTTON_GetU9000Status,232,284,79,14
+    LTEXT           "SIMPLE:",IDC_STATIC,352,26,27,8
+    EDITTEXT        IDC_EDIT_SIMPLE,383,23,51,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "BITPIX:",IDC_STATIC,354,43,25,8
+    EDITTEXT        IDC_EDIT_BITPIX,383,40,51,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "NAXIS:",IDC_STATIC,355,60,24,8
+    EDITTEXT        IDC_EDIT_NAXIS,383,57,51,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "NAXIS1:",IDC_STATIC,351,77,28,8
+    EDITTEXT        IDC_EDIT_NAXIS1,383,74,51,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "NAXIS2:",IDC_STATIC,351,94,28,8
+    EDITTEXT        IDC_EDIT_NAXIS2,383,91,51,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "DATE-OBS:",IDC_STATIC,342,179,37,8
+    EDITTEXT        IDC_EDIT_DATE_OBS,383,176,51,14,ES_AUTOHSCROLL
+    LTEXT           "TIME-OBS:",IDC_STATIC,343,196,36,8
+    EDITTEXT        IDC_EDIT_TIME_OBS,383,193,51,14,ES_AUTOHSCROLL
+    LTEXT           "TIME-END:",IDC_STATIC,343,213,36,8
+    LTEXT           "TIME-OBS-UT:",IDC_STATIC,332,247,47,8
+    LTEXT           "DATE-OBS-UT:",IDC_STATIC,331,230,48,8
+    EDITTEXT        IDC_EDIT_DATE_OBS_UT,383,227,51,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIME_END,383,210,51,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIME_OBS_UT,383,244,51,14,ES_AUTOHSCROLL
+    LTEXT           "TIME-END-UT:",IDC_STATIC,332,264,47,8
+    EDITTEXT        IDC_EDIT_TIME_END_UT,383,261,51,14,ES_AUTOHSCROLL
+    LTEXT           "EXPTIME:",IDC_STATIC,347,281,32,8
+    EDITTEXT        IDC_EDIT_EXPTIME_HDU,383,278,51,14,ES_AUTOHSCROLL
+    LTEXT           "EPOCH:",IDC_STATIC,494,60,26,8
+    EDITTEXT        IDC_EDIT_EPOCH,525,57,51,14,ES_AUTOHSCROLL
+    LTEXT           "JD:",IDC_STATIC,615,128,12,8
+    EDITTEXT        IDC_EDIT_JD,632,125,51,14,ES_AUTOHSCROLL
+    LTEXT           "OBSERVER:",IDC_STATIC,589,144,38,8
+    EDITTEXT        IDC_EDIT_OBSERVER,631,142,51,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "多帧",IDC_BUTTON_ConEXP,143,222,50,14
+    PUSHBUTTON      "停止多帧",IDC_BUTTON_StopConEXP,206,222,50,14
+    LTEXT           "多帧后缀：",IDC_STATIC,172,200,41,8
+    EDITTEXT        IDC_EDIT_ImgNameSu,217,198,81,14,ES_AUTOHSCROLL
+    CONTROL         "快门打开",IDC_CHECK_ShutterStatus,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,181,48,10
+    PUSHBUTTON      "暗场",IDC_BUTTON_DARK,277,222,34,14
+END
+
+IDD_DIALOG_MainDlg DIALOGEX 0, 0, 161, 230
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MiniGWAC"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "CCD1",IDC_BUTTON_WAC1CCD1,21,20,50,14
+    PUSHBUTTON      "CCD2",IDC_BUTTON_WAC1CCD2,91,20,50,14
+    PUSHBUTTON      "CCD3",IDC_BUTTON_WAC2CCD1,21,43,50,14
+    PUSHBUTTON      "CCD4",IDC_BUTTON_WAC2CCD2,91,43,50,14
+    PUSHBUTTON      "CCD5",IDC_BUTTON_WAC3CCD1,21,66,50,14
+    PUSHBUTTON      "CCD6",IDC_BUTTON_WAC3CCD2,91,66,50,14
+    PUSHBUTTON      "CCD7",IDC_BUTTON_WAC4CCD1,21,89,50,14
+    PUSHBUTTON      "CCD8",IDC_BUTTON_WAC4CCD2,91,89,50,14
+    PUSHBUTTON      "CCD9",IDC_BUTTON_WAC5CCD1,21,112,50,14
+    PUSHBUTTON      "CCD10",IDC_BUTTON_WAC5CCD2,91,112,50,14
+    PUSHBUTTON      "CCD11",IDC_BUTTON_WAC6CCD1,21,135,50,14
+    PUSHBUTTON      "CCD12",IDC_BUTTON_WAC6CCD2,91,135,50,14
+    PUSHBUTTON      "BCCD33",IDC_BUTTON_BCCD1,21,171,50,14
+    PUSHBUTTON      "BCCD34",IDC_BUTTON_BCCD2,91,171,50,14
+    PUSHBUTTON      "BCCD35",IDC_BUTTON3_BCCD3,21,196,50,14
+    PUSHBUTTON      "BCCD36",IDC_BUTTON_BCCD4,91,196,50,14
+    GROUPBOX        "BG",IDC_STATIC,15,161,131,53
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "MultiCCDBasedOnLinux Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "MultiCCDBasedOnLinux"
+            VALUE "LegalCopyright", "版权所有 (C) 2013"
+            VALUE "OriginalFilename", "MultiCCDBasedOnLinux.EXE"
+            VALUE "ProductName", "MultiCCDBasedOnLinux 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CCDCTRL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 703
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 314
+    END
+
+    IDD_DIALOG_MainDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 MultiCCDBasedOnLinux(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MultiCCDBasedOnLinux.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

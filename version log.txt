@@ -1,0 +1,32 @@
+2014年10月30日
+1.客户端：增加了模板观测API，包括单帧、多帧拍摄。
+
+2014年3月25日
+1.客户端：修正了fits头的TELESCOP和INSTRUME的值
+
+2014年3月19日
+1.客户端：修正了设置文件后缀的函数SetImgNameSu的bug
+修正了创建服务端目录的函数CreateDirOnSvr的bug
+
+2014年3月5日
+1.客户端：修正了fits header的部分值。
+OBSERVER修改为MiniGWAC，
+LATITUDE改为40:45:17.88，
+LONGITUD改为117:71:97.22，
+OBSERVAT修改为bao，
+JD修改为空，
+WEATHER修改为空，
+AIRMASS改为空。
+
+2014年2月27日
+1.客户端：优化了代码，增加了大GWAC的测试界面。
+
+2014年2月26日
+1.客户端：将快门打开勾选框说明改成红色，方便查看。
+
+2014年2月12日
+1.客户端：修正了EPOCH的内容，从J2000改为2000
+
+2014年1月22日 
+1. 客户端：去掉了fits头RA、DEC、OBSERVER、TELESCOP、LATITUDE、LONGITUD共六项，修正了fits头DEC项显示initialized的问题。
+2. 服务端：修正了拍照完写fits头时找不到fits文件或者路径不对找不到fits文件服务端报错停止的问题。

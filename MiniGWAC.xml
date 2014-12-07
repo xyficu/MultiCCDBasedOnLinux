@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><CCDCtrlParams>
+<m12 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m10 CoolerTem="-431601984.000" ImgSuffix="0" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m04 CoolerTem="-20.000" ImgSuffix="4" ImgName="m01" ShutterStatus="1" ExpTime="2.000" ImgSavPath="/data" Port="2001" IPAddress="190:168:1:17"/>
+<m02 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m03 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m05 CoolerTem="-15.600" ImgSuffix="3" ImgName="testm02" ShutterStatus="0" ExpTime="0.700" ImgSavPath="/data/2" Port="2001" IPAddress="10:36:2:57"/>
+<m08 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m07 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m11 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m09 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m06 CoolerTem="-15.600" ImgSuffix="3" ImgName="testm02" ShutterStatus="0" ExpTime="0.700" ImgSavPath="/data/2" Port="2001" IPAddress="10:36:2:57"/>
+<m101 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m102 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m103 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m31 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m32 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m34 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="0" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:20"/>
+<m33 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:19"/>
+<m35 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m36 CoolerTem="0.000" ImgSuffix="1" ImgName="m01" ShutterStatus="1" ExpTime="10.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m01 CoolerTem="0.000" ImgSuffix="4" ImgName="m01" ShutterStatus="1" ExpTime="1.000" ImgSavPath="/data/" Port="2001" IPAddress="190:168:1:11"/>
+<m-64 ImgSuffix="4"/>
+</CCDCtrlParams>
