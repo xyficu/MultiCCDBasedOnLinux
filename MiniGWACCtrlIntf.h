@@ -31,6 +31,11 @@ public:
 	int TmpltExpCon(int ccdID, CString imgName, float expTime=10, BOOL shtStus=FALSE);
 	int TmpltExpConStop(int ccdID);
 
+	//增加导星观测API
+	int GuideExp(int ccdID, CString imgName, float expTime=10, BOOL shtStus=FALSE);
+	int GuideExpCon(int ccdID, CString imgName, float expTime=10, BOOL shtStus=FALSE);
+	int GuideExpConStop(int ccdID);
+
 	int SetCoolerTem(int ccdID, int tem);
 	int GetCoolerTem(int ccdID, float &tem);
 	int StartCooler(int ccdID);

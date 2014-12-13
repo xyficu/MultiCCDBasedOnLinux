@@ -4,11 +4,9 @@
 #include "MyThread.h"
 #include "U9000Params.h"
 #include "Markup.h"
-
+#include "MiniGWACCtrlIntf.h"
 
 // CCCDCtrlDlg ¶Ô»°¿ò
-
-
 
 class CCCDCtrlDlg : public CDialog
 {
@@ -27,7 +25,6 @@ public:
 	void SaveCCDParams( int ccdID);
 	void SaveFeedbkToLog( int ccdID, CString logInfo);
 
-	
 
 public:
 	U9000Ctrl m_ccdCtrl;

@@ -707,7 +707,7 @@ void CCCDCtrlDlg::OnBnClickedButtonConexp()
 
 	m_pThrd->m_conTakeSnapshot = TRUE;
 	m_pThrd->PostThreadMessageA(WM_TAKESNAPSHOTCON, 0, 0);
-
+	
 }
 
 //Õ£÷π∂‡÷°

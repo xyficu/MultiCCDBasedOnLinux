@@ -629,6 +629,64 @@ int U9000CtrlIntf::TmpltExpCon( int ccdID, CString imgName, float expTime/*=10*/
 	return 0;
 }
 
+int U9000CtrlIntf::GuideExp( int ccdID, CString imgName, float expTime/*=10*/, BOOL shtStus/*=FALSE*/ )
+{
+	BOOL rslt = FALSE;
+	//准备曝光参数
+	m_u9000Params[ccdID].stTakeSnapshot.fileName = imgName;
+	m_u9000Params[ccdID].stTakeSnapshot.expTime = expTime;
+	m_u9000Params[ccdID].stTakeSnapshot.shutter = shtStus;
+	m_u9000Params[ccdID].stTakeSnapshot.status = -1;
+
+	m_fitsHDUs[ccdID].ccdtype = "OBJECT";
+	m_fitsHDUs[ccdID].obsMode = "G";
+	SetHDUs(ccdID);
+	//发送曝光消息
+	rslt = m_pThrd[ccdID]->PostThreadMessageA(WM_TAKESNAPSHOT, 0, 0);
+	if (FALSE == rslt)
+	{
+		return -1;
+	}
+	return 0;
+}
+
+int U9000CtrlIntf::GuideExpCon( int ccdID, CString imgName, float expTime/*=10*/, BOOL shtStus/*=FALSE*/ )
+{
+	BOOL rslt = FALSE;
+	//准备曝光参数
+	m_u9000Params[ccdID].stTakeSnapshot.fileName = imgName;
+	m_u9000Params[ccdID].stTakeSnapshot.expTime = expTime;
+	m_u9000Params[ccdID].stTakeSnapshot.shutter = shtStus;
+	m_u9000Params[ccdID].stTakeSnapshot.status = -1;
+
+	if (-1 == GetImgNameSu(ccdID, m_u9000Params[ccdID].stTakeSnapshot.fileNameSu))
+	{
+		SetImgNameSu(ccdID, 1);
+		m_u9000Params[ccdID].stTakeSnapshot.fileNameSu = 1;
+	}
+	m_u9000Params[ccdID].stTakeSnapshot.snapStatus = 0;
+
+	m_fitsHDUs[ccdID].ccdtype = "OBJECT";
+	m_fitsHDUs[ccdID].obsMode = "G";
+	//准备FitsHDUs信息
+	SetHDUs(ccdID);
+
+	m_pThrd[ccdID]->m_conTakeSnapshot = TRUE;
+	rslt = m_pThrd[ccdID]->PostThreadMessageA(WM_TAKESNAPSHOTCON, 0, 0);
+	if (FALSE == rslt)
+	{
+		return -1;
+	}
+
+	return 0;
+}
+
+int U9000CtrlIntf::GuideExpConStop( int ccdID )
+{
+	m_pThrd[ccdID]->m_conTakeSnapshot = FALSE;
+	return 0;
+}
+
 
 
 
